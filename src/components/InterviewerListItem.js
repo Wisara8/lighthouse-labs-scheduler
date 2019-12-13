@@ -3,7 +3,7 @@ import "components/InterviewerListItem.scss";
 var classnames = require('classnames');
 
 export default function DayListItem(props) {
-  const dayClass = classnames("day-list__item", {
+  const dayClass = classnames("day-__item", {
     "day-list__item--selected": props.selected,
     "day-list__item--full": !props.spots 
   });
