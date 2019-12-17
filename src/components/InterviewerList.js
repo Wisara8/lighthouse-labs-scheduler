@@ -1,31 +1,32 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import InterviewListItem from "components/InterviewListItem.js";
+import InterviewerListItem from "components/InterviewerListItem.js";
 import "components/InterviewerList.scss";
 
 
-const days = [];
+const interviewers = [];
 
-export default function DayList(props) {
-  const days = props.days.map(day => {
+export default function InterviewerList(props) {
+  const interviewers = props.interviewers.map(interviewer => {
     return (
-      <InterviewListItem
-        key={day.id}
-        name={day.name} 
-        spots={day.spots} 
-        selected={day.name === props.day}
-        setDay={props.setDay}
+      <InterviewerListItem
+        key={interviewer.id}
+        name={interviewer.name} 
+        avatar={interviewer.avatar}
+        setInterviewer={props.setInterviewer}
       />
     );
   });
 
-  return days;
+  return interviewers;
 }
 
 ReactDOM.render(
   <section className="interviewers">
     <h4 className="interviewers__header text--light">Interviewer</h4>
-    <ul className="interviewers__list"></ul>
+    <ul className="interviewers__list">
+      <InterviewerListItem interviewers={interviewers}/>
+    </ul>
   </section>,
   document.getElementById("root")
 );
