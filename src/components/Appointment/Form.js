@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import InterviewerList from "components/InterviewerList.js";
 import Button from "components/Button.js"
 
+const [name, setName] = useState("");
+
 export default function Form(props) {
 
   return (
@@ -10,12 +12,10 @@ export default function Form(props) {
         <form autoComplete="off">
           <input
             className="appointment__create-input text--semi-bold"
-            name="name"
+            name={name}
             type="text"
             placeholder="Enter Student Name"
-            /*
-              This must be a controlled component
-            */
+            onInput={(event) => setName(event.target.name)}
           />
         </form>
         <InterviewerList interviewers={props.interviewers} value={props.interviewer} onChange={props.setInterviewer} />
