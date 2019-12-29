@@ -9,6 +9,7 @@ export default function Form(props) {
   return (
     <main className="appointment__card appointment__card--create">
       <section className="appointment__card-left">
+      
         <form autoComplete="off">
           <input
             className="appointment__create-input text--semi-bold"
@@ -18,6 +19,7 @@ export default function Form(props) {
             onInput={(event) => setName(event.target.name)}
           />
         </form>
+
         <InterviewerList interviewers={props.interviewers} value={props.interviewer} onChange={props.setInterviewer} />
       </section>
       <section className="appointment__card-right">
