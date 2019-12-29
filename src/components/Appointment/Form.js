@@ -2,14 +2,15 @@ import React, { useState } from "react";
 import InterviewerList from "components/InterviewerList.js";
 import Button from "components/Button.js"
 
-const [name, setName] = useState("");
-
 export default function Form(props) {
+  
+  const [name, setName] = useState("");
+  const [interviewer, setInterviewer] = useState("");
 
   return (
     <main className="appointment__card appointment__card--create">
       <section className="appointment__card-left">
-      
+
         <form autoComplete="off">
           <input
             className="appointment__create-input text--semi-bold"
