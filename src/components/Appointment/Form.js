@@ -3,8 +3,10 @@ import InterviewerList from "components/InterviewerList.js";
 import Button from "components/Button.js"
 
 export default function Form(props) {
+
   const [name, setName] = useState("");
   const [interviewer, setInterviewer] = useState("");
+  
   return (
     <main className="appointment__card appointment__card--create">
       <section className="appointment__card-left">
