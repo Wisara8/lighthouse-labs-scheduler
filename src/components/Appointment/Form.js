@@ -21,12 +21,14 @@ export default function Form(props) {
           />
         </form>
 
-        <InterviewerList interviewers={props.interviewers} value={interviewer} onChange={props.setInterviewer} />
+        <InterviewerList interviewers={props.interviewers} value={interviewer} onChange={setInterviewer} />
       </section>
       <section className="appointment__card-right">
         <section className="appointment__actions">
+
           <Button danger onClick={props.onCancel}>Cancel</Button>
           <Button confirm onClick={props.onSave}>Save</Button>
+          
         </section>
       </section>
     </main>
