@@ -28,6 +28,7 @@ export default function Form(props) {
             type="text"
             placeholder="Enter Student Name"
             onInput={(event) => setName(event.target.value)}
+            onSubmit={event => event.preventDefault()}
           />
         </form>
 
@@ -48,3 +49,7 @@ export default function Form(props) {
     </main>
   );
 }
+
+// interviwers won't display horizontally
+// They are not being highlighted when selected
+// onSubmit default not being prevented
