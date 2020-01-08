@@ -21,14 +21,16 @@ export default function Form(props) {
     <main className="appointment__card appointment__card--create">
       <section className="appointment__card-left">
 
-        <form autoComplete="off">
+        <form 
+          autoComplete="off"
+          onSubmit={(event) => event.preventDefault()}         
+        >
           <input
             className="appointment__create-input text--semi-bold"
             value={name}
             type="text"
             placeholder="Enter Student Name"
             onInput={(event) => setName(event.target.value)}
-            onSubmit={event => event.preventDefault()}
           />
         </form>
 
@@ -52,4 +54,3 @@ export default function Form(props) {
 
 // interviwers won't display horizontally
 // They are not being highlighted when selected
-// onSubmit default not being prevented
