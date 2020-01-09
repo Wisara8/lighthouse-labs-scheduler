@@ -20,7 +20,7 @@ export default function InterviewerList(props) {
     );
   });
 
-  return interviewers;
+  return (interviewers);
 }
 
 ReactDOM.render(
