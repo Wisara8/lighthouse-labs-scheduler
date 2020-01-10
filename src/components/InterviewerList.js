@@ -32,3 +32,5 @@ ReactDOM.render(
   </section>,
   document.getElementById("root")
 );
+
+//Try moving all of render to the return and only render InterviewerList
