@@ -45,7 +45,7 @@ const appointmentsData = [
   },
   {
     id: 4,
-    time: "3pm",
+    time: "4pm",
   },
   {
     id: 5,
