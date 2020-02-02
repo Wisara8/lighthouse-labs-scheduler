@@ -22,7 +22,7 @@ export default function DayList(props) {
 
 ReactDOM.render(
   <ul>
-  <DayList days={days} />
+    <DayList days={days} />
   </ul>,
   document.getElementById("root")
 );
