@@ -63,7 +63,7 @@ const days = [
   },
   {
     id: 3,
-    name: "Friday",
+    name: "Saturday",
     spots: 0,
   },
 ];
