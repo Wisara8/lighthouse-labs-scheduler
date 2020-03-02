@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import DayList from "components/DayList";
 import Appointment from "components/Appointment";
+import axios from "axios";
 
 import "components/Application.scss";
 
@@ -49,7 +50,7 @@ const appointmentsData = [
   },
   {
     id: 5,
-    time: "5pm",
+    time: "6pm",
     interview: {
       student: "Batman",
       interviewer: {
@@ -59,15 +60,15 @@ const appointmentsData = [
       }
     }
   },
-];  
+];
 
 export default function Application(props) {
   const [day, setDay] = useState("Monday");
-  
+
   const appointments = appointmentsData.map(app => {
     return (
-      <Appointment  
-        key = {app.id} {...app}
+      <Appointment
+        key={app.id} {...app}
       />
     );
   });
