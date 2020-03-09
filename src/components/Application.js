@@ -52,7 +52,7 @@ const appointmentsData = [
     id: 5,
     time: "6pm",
     interview: {
-      student: "Batman",
+      student: "Bobby",
       interviewer: {
         id: 1,
         name: "Super Sylvia",
