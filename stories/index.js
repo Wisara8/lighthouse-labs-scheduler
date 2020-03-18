@@ -66,6 +66,11 @@ const days = [
     name: "Saturday",
     spots: 0,
   },
+  {
+    id: 4,
+    name: "Sunday",
+    spots: 2,
+  }
 ];
 
 storiesOf("DayList", module)
