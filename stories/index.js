@@ -58,7 +58,7 @@ const days = [
   },
   {
     id: 2,
-    name: "Wednesday",
+    name: "Tuesday",
     spots: 5,
   },
   {
