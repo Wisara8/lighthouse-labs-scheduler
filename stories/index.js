@@ -53,7 +53,7 @@ storiesOf("DayListItem", module) //Initiates Storybook and registers our DayList
 const days = [
   {
     id: 1,
-    name: "Tuesday",
+    name: "Monday",
     spots: 2,
   },
   {
