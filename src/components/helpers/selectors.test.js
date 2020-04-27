@@ -9,7 +9,7 @@ const state = {
     },
     {
       id: 2,
-      name: "Tuesday",
+      name: "Wednesdat",
       appointments: [4, 5]
     }
   ],
